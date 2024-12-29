@@ -1,0 +1,242 @@
+@import url("https://fonts.googleapis.com/css2?family=Golos+Text&display=swap");
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+  scroll-behavior: smooth;
+}
+
+img {
+  width: 100%;
+}
+
+.container {
+  max-width: 1140px;
+  margin: 0 auto;
+}
+
+nav {
+  background-image: url(../img/bg1.jpg);
+  height: 100vh;
+  position: relative;
+}
+nav .navFlex {
+  display: flex;
+  justify-content: space-between;
+  padding: 25px;
+}
+nav .logo {
+  width: 50%;
+  font-size: 30px;
+}
+nav .menu {
+  width: 50%;
+  font-size: 28px;
+}
+nav .menu ul {
+  display: flex;
+  gap: 60px;
+}
+nav .menu .logo, nav a {
+  color: white;
+  font-family: "Golos Text", sans-serif;
+  transition: 0.5s;
+}
+nav .menu, nav .logo, nav a:hover {
+  color: rgb(7, 7, 150);
+}
+nav .nav-tlt {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 50%;
+  transform: translateX(-50%);
+  text-align: center;
+}
+nav .nav-tlt h2 {
+  color: white;
+  font-size: 60px;
+  font-family: "Golos Text", sans-serif;
+}
+nav .nav-tlt p {
+  color: white;
+  font-family: "Golos Text", sans-serif;
+  font-size: 20px;
+}
+nav .nav-btn {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: 10%;
+  font-size: 50px;
+}
+nav .nav-btn a {
+  padding: 10px 15px;
+  background-color: #fff;
+  border-radius: 50%;
+  color: #b29a9a;
+  transition: 0.5s;
+  text-align: center;
+}
+nav .nav-btn a:hover {
+  background-color: rgb(51, 51, 203);
+  color: #fff;
+}
+
+.flexCont {
+  padding-top: 100px;
+  display: flex;
+  justify-content: space-between;
+  gap: 100px;
+  padding-bottom: 50px;
+}
+.flexCont h3 {
+  font-size: 50px;
+  color: lightblue;
+  font-family: "Golos Text", sans-serif;
+}
+.flexCont p {
+  padding: 10px;
+  padding-bottom: 30px;
+  font-family: "Golos Text", sans-serif;
+  text-align: left;
+  font-size: 18px;
+}
+.flexCont a {
+  padding: 15px 20px;
+  text-align: left;
+  background-color: rgb(51, 51, 203);
+  border-radius: 50px;
+  color: white;
+  transition: 0.5s;
+}
+.flexCont a:hover {
+  background-color: rgb(81, 81, 203);
+}
+.flexCont .text {
+  text-align: center;
+}
+.flexCont .photo {
+  width: 140%;
+  height: 100%;
+}
+
+.flexCont2 {
+  padding-top: 50px;
+  display: flex;
+}
+.flexCont2 .icons {
+  display: flex;
+  gap: 30px;
+}
+.flexCont2 .icon {
+  width: 33%;
+}
+.flexCont2 .icon .icn {
+  font-size: 60px;
+  text-align: center;
+  color: rgb(51, 51, 203);
+  padding-bottom: 20px;
+}
+.flexCont2 .icon .icn-tlt {
+  text-align: center;
+  font-size: 30px;
+  padding-bottom: 20px;
+  color: rgb(51, 51, 203);
+  font-family: "Golos Text", sans-serif;
+}
+.flexCont2 .icon .icn-txt {
+  text-align: center;
+  font-size: 30px;
+  color: #909090;
+  font-family: "Golos Text", sans-serif;
+}
+
+.Cont4 {
+  margin-top: 50px;
+}
+.Cont4 .title {
+  text-align: center;
+}
+.Cont4 .title h2 {
+  font-size: 40px;
+  color: rgb(51, 51, 203);
+  font-family: "Golos Text", sans-serif;
+  padding: 20px;
+  font-weight: 100;
+}
+.Cont4 .title p {
+  font-size: 20px;
+  font-family: "Golos Text", sans-serif;
+  color: #909090;
+  padding-bottom: 20px;
+}
+.Cont4 .cards {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 15px;
+}
+.Cont4 .card,
+.Cont4 .card2,
+.Cont4 .card3,
+.Cont4 .card4,
+.Cont4 .card5 {
+  position: relative;
+  z-index: 0;
+}
+.Cont4 .card .bg,
+.Cont4 .card2 .bg,
+.Cont4 .card3 .bg,
+.Cont4 .card4 .bg,
+.Cont4 .card5 .bg {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: 0;
+  font-size: 30px;
+  height: 100%;
+  width: 100%;
+  background-color: #333;
+  display: flex;
+  visibility: hidden;
+  opacity: 0;
+  z-index: -1;
+  color: #fff;
+  transition: 0.5s;
+}
+.Cont4 .card:hover .bg {
+  visibility: visible;
+  opacity: 0.8;
+  z-index: 1;
+}
+.Cont4 .txt {
+  position: absolute;
+  bottom: 50%;
+  left: 50%;
+  transform: translateX(-50%);
+  opacity: 0;
+  text-align: left;
+  transition: 0.5s;
+  overflow: hidden;
+  font-family: "Golos Text", sans-serif;
+}
+.Cont4 .honey {
+  font-weight: 900;
+}
+.Cont4 .card:hover .txt {
+  bottom: 15%;
+  opacity: 1;
+}
+.Cont4 .num2 img {
+  height: 323px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.Cont4 .num4 img {
+  height: 323px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}/*# sourceMappingURL=style.css.map */
